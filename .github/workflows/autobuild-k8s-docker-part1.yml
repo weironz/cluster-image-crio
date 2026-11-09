@@ -3,12 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       sealosPatch:
-        description: 'sealos patch image for development.'
+        description: sealos patch image for development.
         required: true
         default: ghcr.io/labring/sealos-patch:dev
-  issue_comment:
-    types:
-      - created
 env:
   part: 1
   allBuild: ${{ secrets.ALLBUILD }}
